@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color:#ffffff;
+    --text-color: #000000;
+    --main-font:2.2rem;
+    --p-font:1.1rem;
+}
+
+body {
+    background: var();
+    color:var();
+}
+
+header{
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index:1000;
+    position:fixed;
+    background: #f1ecc4;
+    box-shadow: 0px 2px 18px 0 rgba(35, 35, 36, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8%;
+    transition: .3s;
+}
+
+.main-logo{
+    color: var(--text-color);
+    font-size: var(--main-font);
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+/* Add this CSS to your existing styles */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.main-pic {
+    max-width: 100%;
+    height: 93vh;
+    margin-top: -4%;
+    object-fit: cover;
+}
+
+.text-content {
+    max-width: 100%;
+}
+
+.main-content h2 {
+    font-size: 5rem;
+    display: inline-block;
+}
+
+.main-content h3 {
+    display: inline-block;
+    line-height: 1.2;
+    font-size: var(--p-font);
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #2a2626;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--p-font);
+    font-weight: 700;
+
+}
+
+.explore-btn:hover {
+    color: var(--text-color);
+    background-color: #f1ecc4;
+    font-weight: 700;
+}
+
+
+#humburger-icon{
+    font-size: 38px;
+    color: var(--text-color);
+    z-index: 10001;
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    border-radius: 10px 10px;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: .5s ease-out;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.login-container {
+    background-color: #f1ecc4;;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f1ecc4;;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-form .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #2a2626;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #443d3d;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #131414;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.icons button {
+    background: transparent;
+    border: none;
+}
+.nav-bar a:hover{
+    background-color: var(--text-color);
+    color: #f1ecc4;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+     
+}
+
+
+.back-btn:hover {
+    background-color: #f2f2f2;
+    display: none;
+}
+
+.close-btn{
+    font-size: 2.5rem;
+}
+
+.icons{
+    display: inline-block;
+}
+
+.icons i{
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 15px;
+}
+.icons i:hover{
+    opacity: 0.7;
+}
+
+
+.home{
+    background-color:var(--bg-color);
+    height: 100vh;
+}
+
+.shop{
+    background-color:var(--bg-color);
+    height: 150vh;
+
+}
+
+.shop{
+    padding: 100px 5%;
+}
+
+.home{
+    padding: 100px 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+
+.product{
+   width: 100%;
+   height: auto;
+}
+
+.box{
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border-radius: 10px;
+    position: relative;
+    transition: all .35 ease-in-out;
+}
+
+.box h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.box h5{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.box .cart i{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 35px;
+   height: 35px;
+   border-radius: 20px;
+   font-size: 20px;
+   color:var(--text-color);
+   box-shadow: 2px 5px 10px rgb(139, 134, 134);
+   background-color: #f1ecc4;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    
+}
+
+/* Your existing CSS remains unchanged */
+
+.about {
+    min-height: 100vh; /* Set a minimum height for the about section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    padding-top: 10%;
+   
+}
+
+.contact {
+    margin-top: 160px;
+    width: 100%;
+    height: 220px;
+    background-color: #2e2929;
+    color: #ffffff;
+    padding: 50px 0; /* Add padding to the contact section */
+}
+
+.main-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Your existing styles for the contact section */
+
+.about-container{
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+    height: 50%;
+}
+
+.about-container h2{
+    font-size: var(--main-font);
+    margin-bottom: 30px;
+}
+
+.about-container p{
+    max-width: 100%;
+    font-size: 100%;
+    font-weight: 600;
+    color: var(--main-font);
+    line-height: 30px;
+}
+
+
+
+.main-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contact-content {
+    margin-bottom: 20px;
+}
+
+.contact-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: var(--p-font);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.action {
+    margin-top: 20px;
+}
+
+.action form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.action input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f1ecc4;
+    font-weight: 500;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action input[type="submit"]:hover {
+    background-color: #e6dea2;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 8%;
+        
+    }
+
+    .main-pic {
+        position: absolute;
+        max-width: 700px;
+        height: 400px;
+        bottom: 0;
+        padding-top: 70px;
+        margin-top: 100px;
+        object-fit: cover;
+    }
+
+    .about{
+        margin-top: 50px;
+    }
+
+    .about-container .p{
+        max-width: 5%;
+        font-size: 10%;
+        font-weight: 400;
+        color: var(--main-font);
+        line-height: 3px;
+    }
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #f1ecc4;
+        box-shadow: 0px 2px 18px 0 rgba(35, 35, 36, 0.2);
+        z-index: 999;
+    }
+
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav-bar a {
+        margin: 10px 0;
+        padding: 10px 15px; /* Adjust the padding for simplicity */
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-bar.active a:hover {
+        color: #0a0a0a;
+        background-color: transparent; /* Remove hover background when navigation menu is active */
+    }
+
+    #humburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Your existing styles remain unchanged */

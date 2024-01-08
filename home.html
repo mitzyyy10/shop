@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <script src="./assets/js/javascript.js"></script>
+</head>
+<body>
+    <section class="home" id="home">  
+        <header>
+            <a href="#" class="main-logo">MixedClothes</a>
+            <div class="bx bx-menu" id="humburger-icon"></div>
+            <ul class="nav-bar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <a href="#"><div class="overlay" id="overlay">
+                    <div class="login-container">
+                        <span class="close-btn" onclick="closeLoginForm()">&times;</span>
+                        <h2>Login</h2>
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <button class = "submit-btn" type="submit">Login</button>
+                            <a href="#">Create Account</a><br>
+                            <a href="#">Forgot Password?</a>
+                            
+                            <button type="button" class="back-btn" onclick="goBack()"></button><br>
+                        </form>
+                    </div>
+                </div>
+            
+                <button onclick="openLoginForm()"><i class='bx bx-user-circle'></i></button></a>
+                <a href="#"><i class='bx bxs-cart'></i></a>
+            </div>
+
+           
+        </header> 
+        <section class="main-content">
+            <div class="grid-container">
+                <div class="text-content">
+                    <h2>Fashion Clothing</h2>
+                    <h3>Welcome to MixedClothes your one-stop destination for trendy and affordable clothing. Explore fashion-forward essentials, elevate your style, and enjoy a seamless shopping experience. Embrace your unique fashion sense with us!</h3>
+                    <a class="explore-btn" href="shop.html">Explore</a>
+                </div>
+                <img class="main-pic" src="https://i.postimg.cc/NMGpx5FP/main-logopic.png" alt="">
+            </div>
+        </section>
+    </section>
+</body>
+</html>
